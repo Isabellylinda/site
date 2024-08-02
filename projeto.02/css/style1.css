@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.introduction {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.introduction h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.intro-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.post {
+    margin-bottom: 30px;
+}
+
+.post h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.post p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.post .author,
+.post .date {
+    color: #888;
+    font-size: 0.8em;
+}
+
+.post .author {
+    margin-top: 20px;
+}
+
+.post .date {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .post, .introduction {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 40px;
+    }
+    .post, .introduction {
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.nav-button:active {
+    background-color: #004494;
+    transform: scale(1);
+}

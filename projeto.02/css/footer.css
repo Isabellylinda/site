@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media {
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.2);
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.nav-button:active {
+    background-color: #004494;
+    transform: scale(1);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    footer {
+        padding: 30px 15px;
+    }
+    .nav-button {
+        padding: 8px 15px;
+        margin: 3px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 40px;
+    }
+    footer {
+        padding: 20px 600px;
+    }
+    .nav-button {
+        padding: 12px 25px;
+        margin: 7px;
+    }
+}
