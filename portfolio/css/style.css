@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #800000;
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro, .about, .contact, .skills, .projetos {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.intro img {
+    width: 200px;
+    height: 240px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.intro p {
+    font-size: 1.1em;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skills table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.skills th, .skills td {
+    padding: 12px;
+    border: 3px solid #000000;
+    text-align: center;
+}
+
+.skills th {
+    background-color: #800000;
+    color: #ffffff;
+}
+
+.skills tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projetos .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projetos .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projetos .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #800000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #800000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #555555;
+}
+
+.about-form form {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.about-form form label {
+    font-weight: bold;
+}
+
+.about-form form textarea {
+    height: 100px;
+}
