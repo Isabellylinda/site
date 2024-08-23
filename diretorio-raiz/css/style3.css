@@ -1,26 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: auto;
 }
 
 table {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
+    width: 100%;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 th, td {
-    padding: 10px;
+    padding: 15px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #44bbf7;
-    color: white;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 tr:nth-child(even) {
@@ -28,33 +69,5 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #ddd;
-}
-
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-    .post, .introduction {
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        padding: 40px;
-    }
-    .post, .introduction {
-        padding: 25px;
-        margin-bottom: 40px;
-    }
+    background-color: #e8f0fe;
 }
