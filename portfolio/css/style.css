@@ -22,10 +22,12 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -191,6 +193,7 @@ footer ul li a {
 .about-form form textarea {
     height: 100px;
 }
+
 /* Seções Gerais */
 main {
     padding: 40px 20px;
@@ -241,22 +244,97 @@ main {
 .about-content a:hover {
     text-decoration: underline;
 }
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    main {
+        padding: 30px 15px;
     }
-    .post, .introduction {
-        padding: 15px;
-        margin-bottom: 20px;
+
+    .skills table {
+        font-size: 14px;
+    }
+
+    .projetos .card {
+        width: 280px;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        padding: 40px;
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-    .post, .introduction {
-        padding: 25px;
-        margin-bottom: 40px;
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .skills table {
+        font-size: 16px;
+    }
+
+    .projetos .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro img {
+        width: 200px;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .about-content p {
+        font-size: 1em;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+
+    .about-form form {
+        width: 90%;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro img {
+        width: 150px;
+    }
+
+    .intro h1 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 0.9em;
+    }
+
+    .about-content p {
+        font-size: 0.9em;
+    }
+
+    .skills table {
+        font-size: 12px;
+    }
+
+    .projetos .card {
+        width: 100%;
     }
 }
